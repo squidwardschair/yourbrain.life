@@ -78,11 +78,13 @@ document.addEventListener("scroll", (event) => {
     );
     
     for (const b of badThingImgs) {
-      b.classList.add("homeBadImgVisible")
+      b.classList.add("homeBadImgVisibleT")
     }
 
     setTimeout(() => {
       for (const b of badThingImgs) {
+        b.classList.add("homeBadImgVisible")
+        b.classList.remove("homeBadImgVisibleT")
         b.classList.add("homeBadImgFull")
       }
     }, 8000)
