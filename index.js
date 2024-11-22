@@ -37,9 +37,9 @@ function isScrolledIntoView(el) {
 const badThings = document.getElementById("homeBadAni")
 const badThingImgs = document.getElementsByClassName("homeBadImg")
 const badImgText = {
-  "cig": "Ciggartes are really bad for you because they take away your brain health and they are not skibidi at all !! They can cause lung cancer which = dementia omg!!",
-  "junkfood": "Junk food raises your colestreal and stuff and they make you fat which takes away vital blood for your brain don't be alzheimers and drink diet coke every day",
-  "uplate": "Being up late messes up your circaridan rythem and it makes your neurological proccesses very slow which can harm your brain in the future when you are old",
+  "cig": "Beyond being dangerous for for lungs, smoking cigarettes has also been proven to shrink the size of your brain greatly and increase your risk of getting Alzheimer's disease by 40%.",
+  "junkfood": "A steady diet of unhealthy foods can lead to increased risk of dementia because of inflammation and a lack of good nutrients. Your hippocampus, a part of the brain that is responsible for memories, is particularly vulnerable.",
+  "uplate": "It has been shown that people aged 50-60 that get less than 6 hours of sleep per night are 30% more likely to develop dementia. Poor sleeping habits can lead to accumulations of harmful proteins in the brain, as well as overall decreased brain functions.",
 }
 let badThingsTrigger = false
 document.addEventListener("scroll", (event) => {
@@ -65,7 +65,7 @@ document.addEventListener("scroll", (event) => {
       "#homeBadDesc", "https://cdn.jsdelivr.net/npm/vara@1.4.0/fonts/Shadows-Into-Light/shadows-into-light.json",
       [
         {
-          text: "Your brain is like a muscle, expanding and contracting as you grow up. But the actions you take as a teenager can affect your brain health in the future. What you do today greatly affects your risk for alzheimers and dementia as you age.",
+          text: "Your brain is like a muscle, expanding and contracting as you grow up. But the actions you take as a teenager can affect your brain health in the future. What you do today greatly affects your risk for alzheimers and dementia as you age. Click the images for more information.",
           duration: 10000,
         }
       ],
