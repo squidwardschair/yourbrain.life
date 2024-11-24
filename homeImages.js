@@ -24,7 +24,7 @@ for (var i=0; i<numImages; i++) {
     img.setAttribute("id", `homeImage${i}`)
     img.classList.add("homePhotoHolder")
     img.style.transform = `rotate(${Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled)}deg)`
-    img.style.backgroundImage = `url(imgs/${i+1}.jpg)`
+    img.style.backgroundImage = `url(imgs/${i+1}.avif)`
     document.getElementById(`photoGrid${grid}`).appendChild(img)
     grid=grid=="Top" ? "Bottom" : "Top"
 }
