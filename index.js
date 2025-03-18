@@ -72,11 +72,11 @@ const ytVid = document.getElementById("ytVid");
 let videoOrder = [1, 2, 3, 4, 5, 6];
 shuffleArray(videoOrder);
 const badImgText = {
-  cig: "Beyond being dangerous for for lungs, smoking cigarettes has also been proven to shrink the size of your brain greatly and increase your risk of getting Alzheimer's disease by 40%.",
-  junkfood:
-    "A steady diet of unhealthy foods can lead to increased risk of dementia because of inflammation and a lack of good nutrients. Your hippocampus, a part of the brain that is responsible for memories, is particularly vulnerable.",
-  uplate:
-    "It has been shown that people aged 50-60 that get less than 6 hours of sleep per night are 30% more likely to develop dementia. Poor sleeping habits can lead to accumulations of harmful proteins in the brain, as well as overall decreased brain functions.",
+  habit_1: "Keeping your brain inactive for countless hours can increase your risk of Alzheimer's by 60%",
+  habit_2:
+    "Excessive alcohol consumption can increase risk of Alzheimer's by 30%",
+  habit_3:
+    "An unhealthy diet can increase risk of Alzheimer's by 50%",
 };
 let badThingsTrigger = false;
 let videoTrigger = false;
@@ -111,8 +111,8 @@ document.addEventListener("scroll", (event) => {
       "https://cdn.jsdelivr.net/npm/vara@1.4.0/fonts/Shadows-Into-Light/shadows-into-light.json",
       [
         {
-          text: "Your brain is like a muscle, expanding and contracting as you grow up. But the actions you take as a teenager can affect your brain health in the future. What you do today greatly affects your risk for alzheimers and dementia as you age. Click the images for more information.",
-          duration: 10000,
+          text: "The actions you take as a teenager can greatly affect your risk for Alzheimer's in the future. Learn about the risk factors by clicking the images below.",
+          duration: 6000,
         },
       ],
       {
@@ -133,7 +133,7 @@ document.addEventListener("scroll", (event) => {
         b.classList.remove("homeBadImgVisibleT");
         b.classList.add("homeBadImgFull");
       }
-    }, 8000);
+    }, 3000);
     badThingsTrigger = true;
   }
 
@@ -182,7 +182,7 @@ document.addEventListener("scroll", (event) => {
             o.container.style.opacity = 0;
             setTimeout(() => {
               PSA.classList.add("PSAVisible");
-            }, 2000);
+            }, 250);
           });
         });
       });

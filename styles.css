@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  background-color: black;
 }
 
 .shadows-into-light-regular {
@@ -245,8 +246,8 @@ body {
 
 .homeBadImg {
   width: 25vw;
-  height: 25vw;
-  background-size: cover;
+  height: 15vw;
+  background-size: contain;
   background-repeat: no-repeat;
   box-shadow: 0 0 45px 45px black inset;
   opacity: 0;
@@ -296,17 +297,16 @@ body {
   animation-duration: 0.5s;
 }
 
-.cig {
-  background-image: url("imgs/cig.avif");
+.habit_1 {
+  background-image: url("imgs/habit_1.avif");
 }
 
-.junkfood {
-  background-image: url("imgs/junkfood.avif");
+.habit_2 {
+  background-image: url("imgs/habit_2.avif");
 }
 
-.uplate {
-  background-image: url("imgs/uplate.avif");
-  background-position: right 20px bottom 5px;
+.habit_3 {
+  background-image: url("imgs/habit_3.avif");
 }
 
 @media only screen and (min-width: 768px) {
@@ -357,7 +357,7 @@ body {
 
   .homeBadImg {
     width: 80vw;
-    height: 80vw;
+    height: 50vw;
     margin-bottom: 25px;
   }
 
