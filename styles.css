@@ -260,7 +260,7 @@ body {
 
 .homeBadImgVisibleT {
   opacity: 1;
-  transition: 8s;
+  transition: 4s;
 }
 
 .homeBadImgVisible {
@@ -269,6 +269,34 @@ body {
 
 .homeBadImgFull:hover {
   cursor: pointer;
+}
+
+.silFont {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hfcDonationLink {
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 25px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.hfcDonationAni {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+}
+
+.hfcDonationLink:hover {
+  background-color: white;
+  color: black;
 }
 
 @keyframes fadeInOpacity {

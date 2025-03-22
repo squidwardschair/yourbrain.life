@@ -66,6 +66,8 @@ function playVideo(vidStem, index) {
 
 const badThings = document.getElementById("homeBadAni");
 const badThingImgs = document.getElementsByClassName("homeBadImg");
+const hfcInfo = document.getElementById("hfcTitle")
+const hfcDonate = document.getElementById("hfcDonate")
 const videoView = document.getElementById("videoTrigger");
 const PSA = document.getElementById("PSA");
 const ytVid = document.getElementById("ytVid");
@@ -79,6 +81,7 @@ const badImgText = {
     "An unhealthy diet can increase risk of Alzheimer's by 50%",
 };
 let badThingsTrigger = false;
+let hfcTrigger = false
 let videoTrigger = false;
 
 if (window.screen.width < 600) {
@@ -137,6 +140,45 @@ document.addEventListener("scroll", (event) => {
     badThingsTrigger = true;
   }
 
+  if (isScrolledIntoView(hfcInfo) && !hfcTrigger) {
+    console.log("poggers");
+    var hfcTitleVara = new Vara(
+      "#hfcTitle",
+      "https://cdn.jsdelivr.net/npm/vara@1.4.0/fonts/Shadows-Into-Light/shadows-into-light.json",
+      [
+        {
+          text: "How can you help?",
+          duration: 3000,
+          y: 10,
+        },
+      ],
+      {
+        strokeWidth: 2,
+        color: "#FFFFFF",
+        fontSize: headerFontSize,
+        textAlign: "center",
+      }
+    );
+    var hfcDescVara = new Vara(
+      "#hfcDesc",
+      "https://cdn.jsdelivr.net/npm/vara@1.4.0/fonts/Shadows-Into-Light/shadows-into-light.json",
+      [
+        {
+          text: "Hilarity for Charity (HFC) is a non-profit organization that spreads awareness on Alzheimer's prevention through brain health research and education. Visit the link below to donate to HFC.",
+          duration: 6000,
+        },
+      ],
+      {
+        strokeWidth: 2,
+        color: "#FFFFFF",
+        fontSize: descFontSize,
+        textAlign: "center",
+      }
+    );
+    hfcDonate.classList.add("hfcDonationAni")
+    hfcTrigger = true;
+  }
+  
   if (isScrolledIntoView(videoView) && !videoTrigger) {
     videoTrigger = true;
     var vidVara1 = new Vara(
